@@ -1,0 +1,22 @@
+{
+  "_설명": "홈페이지가 설명회 덱을 만들 때 프롬프트에 넣을 예시 덱 표(2026-10-23). 예시 덱을 전부 넣으면 덱이 늘 때마다 비용이 오르므로, 기준 덱(reference) + 주제에 맞는 예시 1~2벌만 넣는다. 키는 홈페이지가 정하는 설명회 주제 분류. 표에 없는 주제는 fallback. notForPrompt는 견본 · 비교용이라 프롬프트에 넣지 않는다(사본에는 둔다 — 부품 확인용).",
+  "reference": "seminar-korean",
+  "types": {
+    "korean":        { "label": "국어 · 문해력",        "examples": ["seminar-korean", "seminar-vocab"] },
+    "math":          { "label": "수학",                 "examples": ["seminar-math", "seminar-thinking"] },
+    "english":       { "label": "영어",                 "examples": ["seminar-csat-eng", "seminar-phonics"] },
+    "english_speak": { "label": "영어 말하기",          "examples": ["seminar-speaking"] },
+    "science":       { "label": "과학 · 과학고",        "examples": ["seminar-science", "seminar-sci-high"] },
+    "social":        { "label": "사회 · 역사",          "examples": ["seminar-social", "seminar-history"] },
+    "reading":       { "label": "독서 · 논술 · 글쓰기", "examples": ["seminar-reading", "seminar-essay"] },
+    "admission":     { "label": "입시 · 고교 제도",     "examples": ["seminar-admission", "seminar-credit"] },
+    "csat":          { "label": "수능 대비",            "examples": ["seminar-csat", "seminar-csat-eng"] },
+    "jeongsi":       { "label": "수시 · 정시 선택",     "examples": ["seminar-jeongsi", "seminar-admission"] },
+    "apply":         { "label": "정시 원서 · 대학 지원", "examples": ["seminar-apply", "seminar-jeongsi"] },
+    "school_exam":   { "label": "내신 · 시험 대비",     "examples": ["seminar-midterm", "seminar-perf"] },
+    "habit":         { "label": "공부 습관 · 입학 준비", "examples": ["seminar-study", "seminar-entry"] },
+    "other":         { "label": "코딩 · 경제 등 기타",   "examples": ["seminar-coding", "seminar-money"] }
+  },
+  "fallback": ["seminar-money"],
+  "notForPrompt": ["grid", "grid-2", "grid-3", "grid-4", "grid-5", "expressions", "expressions-2", "parts", "icons", "type-scale", "photos", "seminar-grid", "seminar-english"]
+}

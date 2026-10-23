@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>설명회 슬라이드 스튜디오</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="slide.css">
+  <link rel="stylesheet" href="studio.css">
+  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js"></script>
+</head>
+<body>
+  <!-- 임시 웹앱(2026-10-20, 홈페이지 UI와 무관한 자체 화면): 한 장씩 크게 보며 글자를 바로 고치면 덱 파일에 저장,
+       파일이 바뀌면 저절로 다시 그림, 발표 모드. 디자인 옵션 없음 -->
+  <header class="top">
+    <div class="brand-mark">S</div>
+    <div class="top-title"><strong>설명회 슬라이드</strong><select id="deck-pick" title="덱"></select></div>
+    <span class="grow"></span>
+    <span id="save-state" class="muted"></span>
+    <button id="guide-toggle" class="btn" title="디자인 영역 안내선 (G)">안내선</button>
+    <button id="edit-toggle" class="btn">글자 고치기</button>
+    <button id="present" class="btn">발표 모드</button>
+    <button id="export-pptx" class="btn primary">PPT로 내보내기</button>
+  </header>
+  <div class="studio">
+    <nav id="thumbs" class="thumbs"></nav>
+    <section class="stage">
+      <div id="viewport" class="viewport"><main id="deck"></main></div>
+      <div class="pager">
+        <button id="prev" class="round" title="이전 (←)">‹</button>
+        <span id="count"></span>
+        <button id="next" class="round" title="다음 (→)">›</button>
+        <span class="pager-sep"></span>
+        <button id="zoom-out" class="round" title="축소 (⌘ −)">−</button>
+        <button id="zoom-fit" class="zoom-label" title="화면에 맞춤 (⌘ 0) — 트랙패드로 집으면 확대·축소">맞춤</button>
+        <button id="zoom-in" class="round" title="확대 (⌘ +)">+</button>
+        <button id="zoom-100" class="btn small-btn" title="실제 크기 1920×1080 (⌘ 1)">100%</button>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

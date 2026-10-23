@@ -1,0 +1,15 @@
+{
+  "name": "deck-kit",
+  "private": true,
+  "type": "module",
+  "description": "학원 설명회 슬라이드 키트 — HTML 덱을 그려 편집 가능한 PPTX로 내보낸다",
+  "scripts": {
+    "studio": "python3 scripts/serve.py 5175 --home slide",
+    "check": "node scripts/slide-shot.mjs",
+    "pptx": "node scripts/slide-pptx.mjs",
+    "prompt-parts": "node scripts/slide-prompt.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.43.1"
+  }
+}

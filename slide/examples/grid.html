@@ -1,0 +1,73 @@
+<!-- 격자 키트 견본 6장 (2026-10-20 디자이너 '한번 해볼게' → '복잡하거나 많은 내용은 안 들어간다': 한 장 1~3칸, 목록 4줄까지). 12칸 격자 .s-grid, 칸 .s-m(w4·w6·w8·w12 × h2), 칸마다 칸용 조각 m- 하나.
+     목차 표시 = 칸 짜임. 같은 조각을 다른 칸 크기에 넣어 조립한다. 내용은 모두 예시 -->
+
+<!-- 1. 큰 칸 막대(2/3) + 작은 칸 숫자 둘(1/3) -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 막대 w12·h2(상자 없이) · 도식 하나</p><h2 class="s-title">감점 1위는 문법 오개념이에요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w12 h2 bare"><div class="m-bars" data-unit="명"><div style="--v:38" class="accent">문법 오개념</div><div style="--v:27">서술형 감점</div><div style="--v:10">단어 철자</div><div style="--v:5">듣기</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. 반반: 도넛(상자 없이) + 줄 목록 -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 줄 목록 w8·h2(상자 없이) + 도식 아래 한 줄</p><h2 class="s-title">서술형이 시험의 40%를 차지해요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w8 h2 bare"><ul class="m-list">
+        <li><i data-icon="school"></i><div class="s-row-text"><p class="s-h">가온중</p><p>서술형 8문항</p></div><p class="s-value">45%</p></li>
+        <li class="accent"><i data-icon="school"></i><div class="s-row-text"><p class="s-h">누리중</p><p>서술형 7문항</p></div><p class="s-value">40%</p></li>
+        <li><i data-icon="school"></i><div class="s-row-text"><p class="s-h">다솜중</p><p>서술형 6문항</p></div><p class="s-value">35%</p></li>
+      </ul><p class="m-caption">세 학교 평균 <span class="hl">100점 중 40점</span>이 서술형이에요</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 위 아이콘 칸 셋(1/3) + 아래 단계(전체) -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 아이콘 칸 w4·h2 ×3</p><h2 class="s-title">해결 원리는 세 가지예요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w4 h2"><div class="m-feature"><i data-icon="chat"></i><div><p class="s-h">말로 설명하기</p><p>설명할 수 있어야<br>아는 거예요</p></div></div></div>
+      <div class="s-m w4 h2 accent"><div class="m-feature"><i data-icon="pencil"></i><div><p class="s-h">직접 써 보기</p><p>보기만 하지 않고<br>한 문장씩 써 봐요</p></div></div></div>
+      <div class="s-m w4 h2"><div class="m-feature"><i data-icon="note"></i><div><p class="s-h">틀린 이유 적기</p><p>오답은 답이 아니라<br>이유를 남겨요</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 큰 칸 인용(2/3) + 큰 칸 숫자(1/3, 메인) -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 인용 w8·h2(상자 없이) + 메모 겹치기</p><h2 class="s-title">학부모님 만족도 4.9점이에요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w8 h2 bare"><div class="m-quote"><span class="s-qmark"><i data-icon="quote"></i></span><blockquote>숙제 검사보다 오답 정리를 더 챙겨 줘서<br>아이가 먼저 공부 이야기를 해요.</blockquote><p class="s-who"><b>중2 학부모</b> · 다닌 지 1년</p></div><p class="m-memo"><b>5점 만점 4.9점</b>124명 중 118명이 5점을 줬어요</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 진행 막대 반반 + 가로 막대 전체 -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 단계 w12·h2(상자 없이, 단계마다 카드)</p><h2 class="s-title">90분 중 40분은 혼자 풀어요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w12 h2 bare"><div class="m-steps">
+        <div><span class="s-num">1</span><p class="s-h">개념 설명</p><p>20분 · 핵심만</p></div>
+        <div class="accent"><span class="s-num">2</span><p class="s-h">혼자 풀기</p><p>40분 · 힌트만</p></div>
+        <div><span class="s-num">3</span><p class="s-h">말로 설명</p><p>20분 · 풀이 발표</p></div>
+        <div><span class="s-num">4</span><p class="s-h">오답 기록</p><p>10분 · 이유 한 줄</p></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 큰 칸 숫자(1/3, 상자 없이) + 작은 칸 목록 · 작은 칸 막대(2/3) -->
+<section class="slide">
+  <header class="s-head"><p class="s-index">격자 · 가로 막대 w12·h2 + 도식 아래 한 줄</p><h2 class="s-title">1년 만에 28점이 올랐어요</h2></header>
+  <div class="s-body">
+    <div class="s-grid">
+      <div class="s-m w12 h2"><div class="m-hbars" data-unit="점"><div style="--v:64">초6 3월</div><div style="--v:85">초6 10월</div><div style="--v:92" class="accent">중1 첫 시험</div></div><p class="m-caption">64점에서 92점으로 · 외우던 문법을 <span class="hl">설명하는 문법</span>으로</p></div>
+    </div>
+  </div>
+</section>
